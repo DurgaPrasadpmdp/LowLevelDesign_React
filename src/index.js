@@ -11,6 +11,9 @@ import AutoComplete from "./Components/AutoComplete/AutoComplete";
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
 import ServerSidePagination from "./Components/Pagination/ServerSidePagination";
 import ClientSidePagination from "./Components/Pagination/ClientSidePagination";
+import MultiLanguage from "./Components/MultiLanguage/MultiLanguage";
+import NestedComments from "./Components/NestedComments/NestedComments";
+import { YouTubeLiveChat } from "./Components/LiveChat/YouTubeLiveChat";
 
 const routes = createBrowserRouter([
   {
@@ -40,6 +43,18 @@ const routes = createBrowserRouter([
       {
         path: "server-side-pagination",
         element: <ServerSidePagination />,
+      },
+      {
+        path: "multi-language-support",
+        element: <MultiLanguage />,
+      },
+      {
+        path: "nested-comments",
+        element: <NestedComments />,
+      },
+      {
+        path: "live-chat",
+        element: <YouTubeLiveChat />,
       },
     ],
   },

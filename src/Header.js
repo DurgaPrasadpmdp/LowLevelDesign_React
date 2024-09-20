@@ -25,6 +25,15 @@ const Header = () => {
         <li className="pl-2 pr-2">
           <Link to="server-side-pagination">Server-Side-Pagination</Link>
         </li>
+        <li className="pl-2 pr-2">
+          <Link to="multi-language-support">Multi-Language-Support</Link>
+        </li>
+        <li className="pl-2 pr-2">
+          <Link to="nested-comments">Nested-Comments</Link>
+        </li>
+        <li className="pl-2 pr-2">
+          <Link to="live-chat">Youtube-Live-Chat</Link>
+        </li>
       </ul>
     </div>
   );
