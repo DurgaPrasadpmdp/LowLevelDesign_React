@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -14,6 +14,8 @@ import ClientSidePagination from "./Components/Pagination/ClientSidePagination";
 import MultiLanguage from "./Components/MultiLanguage/MultiLanguage";
 import NestedComments from "./Components/NestedComments/NestedComments";
 import { YouTubeLiveChat } from "./Components/LiveChat/YouTubeLiveChat";
+import RouteGuard from "./Utils/RouteGuards/RouteGuard";
+import ProtectedRoute from "./Components/ProtectedRoutes/ProtectedRoute";
 
 const routes = createBrowserRouter([
   {
@@ -55,6 +57,14 @@ const routes = createBrowserRouter([
       {
         path: "live-chat",
         element: <YouTubeLiveChat />,
+      },
+      {
+        path: "protected-route",
+        element: (
+          <RouteGuard>
+            <ProtectedRoute />
+          </RouteGuard>
+        ),
       },
     ],
   },

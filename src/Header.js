@@ -34,6 +34,9 @@ const Header = () => {
         <li className="pl-2 pr-2">
           <Link to="live-chat">Youtube-Live-Chat</Link>
         </li>
+        <li className="pl-2 pr-2">
+          <Link to="protected-route">Protected-Route</Link>
+        </li>
       </ul>
     </div>
   );
