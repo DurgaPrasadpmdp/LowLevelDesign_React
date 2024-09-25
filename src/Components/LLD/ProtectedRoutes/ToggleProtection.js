@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import ToggleProtectedContext from "../../Utils/Context/ToggleProtectedContext";
+import ToggleProtectedContext from "../../../Utils/Context/ToggleProtectedContext";
 
 const ToggleProtection = () => {
   const { togglePermission, setTogglePermission } = useContext(

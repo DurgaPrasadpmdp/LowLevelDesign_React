@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AccordianTab from "./AccordianTab";
-import LANG from "../../Utils/LanguageTranslate";
+import LANG from "../../../Utils/LanguageTranslate";
 
 const Accordian = (props) => {
   console.log(props);

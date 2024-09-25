@@ -5,17 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "./Header";
-import DisplayProducts from "./Components/InfiniteScroll/DisplayProducts";
-import Accordian from "./Components/Accordian/Accordian";
-import AutoComplete from "./Components/AutoComplete/AutoComplete";
-import ImageSlider from "./Components/ImageSlider/ImageSlider";
-import ServerSidePagination from "./Components/Pagination/ServerSidePagination";
-import ClientSidePagination from "./Components/Pagination/ClientSidePagination";
-import MultiLanguage from "./Components/MultiLanguage/MultiLanguage";
-import NestedComments from "./Components/NestedComments/NestedComments";
-import { YouTubeLiveChat } from "./Components/LiveChat/YouTubeLiveChat";
+import DisplayProducts from "./Components/LLD/InfiniteScroll/DisplayProducts";
+import Accordian from "./Components/LLD/Accordian/Accordian";
+import AutoComplete from "./Components/LLD/AutoComplete/AutoComplete";
+import ImageSlider from "./Components/LLD/ImageSlider/ImageSlider";
+import ServerSidePagination from "./Components/LLD/Pagination/ServerSidePagination";
+import ClientSidePagination from "./Components/LLD/Pagination/ClientSidePagination";
+import MultiLanguage from "./Components/LLD/MultiLanguage/MultiLanguage";
+import NestedComments from "./Components/LLD/NestedComments/NestedComments";
+import { YouTubeLiveChat } from "./Components/LLD/LiveChat/YouTubeLiveChat";
 import RouteGuard from "./Utils/RouteGuards/RouteGuard";
-import ProtectedRoute from "./Components/ProtectedRoutes/ProtectedRoute";
+import ProtectedRoute from "./Components/LLD/ProtectedRoutes/ProtectedRoute";
 
 const routes = createBrowserRouter([
   {
