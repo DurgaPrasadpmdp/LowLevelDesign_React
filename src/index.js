@@ -16,6 +16,8 @@ import NestedComments from "./Components/LLD/NestedComments/NestedComments";
 import { YouTubeLiveChat } from "./Components/LLD/LiveChat/YouTubeLiveChat";
 import RouteGuard from "./Utils/RouteGuards/RouteGuard";
 import ProtectedRoute from "./Components/LLD/ProtectedRoutes/ProtectedRoute";
+import ShortPolling from "./Components/LLD/RealTimeUpdates/ShortPolling";
+import LongPolling from "./Components/LLD/RealTimeUpdates/LongPolling";
 
 const routes = createBrowserRouter([
   {
@@ -65,6 +67,14 @@ const routes = createBrowserRouter([
             <ProtectedRoute />
           </RouteGuard>
         ),
+      },
+      {
+        path: "short-polling",
+        element: <ShortPolling />,
+      },
+      {
+        path: "long-polling",
+        element: <LongPolling />,
       },
     ],
   },
