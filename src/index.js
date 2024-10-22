@@ -18,6 +18,7 @@ import RouteGuard from "./Utils/RouteGuards/RouteGuard";
 import ProtectedRoute from "./Components/LLD/ProtectedRoutes/ProtectedRoute";
 import ShortPolling from "./Components/LLD/RealTimeUpdates/ShortPolling";
 import LongPolling from "./Components/LLD/RealTimeUpdates/LongPolling";
+import WebSocket from "./Components/LLD/RealTimeUpdates/WebSocket";
 
 const routes = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const routes = createBrowserRouter([
       {
         path: "long-polling",
         element: <LongPolling />,
+      },
+      {
+        path: "web-socket",
+        element: <WebSocket />,
       },
     ],
   },

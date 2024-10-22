@@ -45,6 +45,10 @@ const Header = () => {
         <li className="pl-2 pr-2">
           <Link to="long-polling">Long Polling</Link>
         </li>
+
+        <li className="pl-2 pr-2">
+          <Link to="web-socket">Web Socket</Link>
+        </li>
       </ul>
     </div>
   );
